@@ -1,0 +1,30 @@
+.container {
+    max-width: fit-content !important;
+}
+
+.form {
+    position: absolute;
+    left: 0;
+}
+
+.multipleSelection {
+    width: max-content;
+    background-color: #e6f7ff;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
