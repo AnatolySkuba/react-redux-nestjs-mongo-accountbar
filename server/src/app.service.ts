@@ -11,7 +11,7 @@ export class AppService {
     console.log(11, 'prisma.company.findMany()');
     const res = this.prisma.company.findMany();
     const res2 = await this.prisma.company.findMany();
-    console.log(13, res, res2);
+    console.log(13, res, res2[0]);
 
     return res;
   }
