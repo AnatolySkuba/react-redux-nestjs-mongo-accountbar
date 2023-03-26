@@ -10,7 +10,11 @@ import { AccountBarTable } from "../AccountBarTable/AccountBarTable";
 
 export const AccountBar = () => {
     const [isModal, setIsModal] = useState(false);
+    console.log(13, "useGetCompaniesQuery");
+
     const data = useGetCompaniesQuery(getCompanies);
+    console.log(14, data?.data);
+
     const companies: ICompany[] = data?.data;
 
     const toggleModal = () => {

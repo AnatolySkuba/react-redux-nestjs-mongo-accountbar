@@ -9,6 +9,7 @@ export class AppController {
 
   @Get()
   async getCompanies(): Promise<Company[]> {
+    console.log(12, 'getCompanies');
     return this.appService.getCompanies();
   }
 

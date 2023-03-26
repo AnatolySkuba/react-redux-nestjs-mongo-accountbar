@@ -8,7 +8,12 @@ export class AppService {
   constructor(private readonly prisma: PrismaService) {}
 
   async getCompanies(): Promise<Company[]> {
-    return this.prisma.company.findMany();
+    console.log(11, 'prisma.company.findMany()');
+    const res = this.prisma.company.findMany();
+    const res2 = await this.prisma.company.findMany();
+    console.log(13, res, res2);
+
+    return res;
   }
 
   async getMaxAccount() {
